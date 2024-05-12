@@ -40,7 +40,7 @@ Trendz Analytics provides built-in instruments for time-series prediction. All n
 
     * Enable the **Prediction** checkbox for the forecast field, as shown in the image marked with a green box then select **CUSTOM**. As you can see, there is script to define our custom ARIMA model here with (0,1,1) since its best and most optimal configuration for our model (used autoarima library).
 
-        ![ARIMA Custom Configuration](<../img/ARIMA_Custom Configuration.png>)
+        ![ARIMA Custom Configuration](<../images/custom model/ARIMA_Custom Configuration.png>)
 
     * You can see script that we used below:
       ```
@@ -75,11 +75,11 @@ Trendz Analytics provides built-in instruments for time-series prediction. All n
 4. Visualize the Prediction. After writing the code, you can **BUILD** a view to see the result of your prediction model.
     * Lower Vertical Sealing Temperature: 
 
-       ![alt text](<../img/VB_ARIMA_Custom.png>)
+       ![alt text](<../images/custom model/VB_ARIMA_Custom.png>)
 
     * Upper Vertical Sealing Temperature: 
     
-        ![alt text](<../img/VA_ARIMA_Custom.png>)
+        ![alt text](<../images/custom model/VA_ARIMA_Custom.png>)
       
 5. Evaluate the Forecast Model:
     * Use in-sample forecast: To evaluate the performance of the Prophet model, we use sample data divided into training and testing datasets. In our case, we use data from 5 days, where 4 days are used for training and 1 day for testing.

@@ -40,7 +40,7 @@ Trendz Analytics provides built-in instruments for time-series prediction. All n
 
     * Enable the **Prediction** checkbox for the forecast field, as shown in the image marked with a green box.
 
-        ![ARIMA Default Configuration](<../img/ARIMA_Default Configuration.png>)
+        ![ARIMA Default Configuration](<../images/default model/ARIMA_Default Configuration.png>)
 
     * Select **ARIMA** as the prediction model or method.
 
