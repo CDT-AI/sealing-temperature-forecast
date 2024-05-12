@@ -9,32 +9,15 @@ Sealing Temperature Forecast is an interdisciplinary project that utilizes advan
 ```plaintext
 Sealing-Temperature-Forecast/
 ├── data/                   # Dataset for this project
-│   ├── Ilapak 12 (September-November).xlsx
-│   ├── data_mean187window_vatemp.csv
-│   └── data_mean187window_vbtemp.csv
 ├── docs/                   # Project documentation and setup guides
 │   ├── data-preprocessing/
-│   │   └── data-preprocessing.ipynb
 │   └── installation/
 │       ├── thingsboard/
-│       │   └── ThingsBoard-Installation.md
 │       └── trendz/
-│           └── Trendz-Installations.md
 ├── models/                 # Forecasting models and their evaluations
-│   ├── arima.ipynb
-│   ├── fourier.ipynb
-│   ├── prophet.ipynb
-│   └── sarimax.ipynb
 └── trendz/                 # Trendz analytics related content
     ├── custom analytics/
-    │   ├── Trendz_Custom Model_ARIMA.md
-    │   ├── Trendz_Custom Model_Prophet.md
-    │   └── Trendz_Custom Model_SARIMAX.md
     └── default analytics/
-        ├── Trendz_Default Model_ARIMA.md
-        ├── Trendz_Default Model_Fourier.md
-        ├── Trendz_Default Model_Linear Regression.md
-        └── Trendz_Default Model_Prophet.md
 ```
 
 ## Installation
