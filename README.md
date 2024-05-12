@@ -1,39 +1,71 @@
 # Sealing Temperature Forecast
 
 ## Overview
-Sealing Temperature Forecast is an interdisciplinary project that utilizes advanced data analytics and forecasting models to predict sealing machine temperatures. This repository contains the collective work of several team members integrating models built in Google Colab, analytics from Trendz, and data orchestration via ThingsBoard.
+
+Sealing Temperature Forecast is an interdisciplinary project that utilizes advanced data analytics and forecasting models to predict sealing machine temperatures. This project is part of *Kalbe Digital Lab* within the **AI and IoT** team, specifically for the **Bintang Toedjoe** use case in predictive maintenance. This repository contains the collective work of several team members integrating models built in Google Colab, analytics from Trendz, and data orchestration via ThingsBoard.
 
 ## Project Structure
+
 ```plaintext
 Sealing-Temperature-Forecast/
-├── data/          # Dataset for this project
-├── docs/          # Project documentation and setup guides
-├── models/        # Forecasting models and their evaluations
-└──  trendz/        # Trendz analytics related content
+├── data/                   # Dataset for this project
+│   ├── Ilapak 12 (September-November).xlsx
+│   ├── data_mean187window_vatemp.csv
+│   └── data_mean187window_vbtemp.csv
+├── docs/                   # Project documentation and setup guides
+│   ├── data-preprocessing/
+│   │   └── data-preprocessing.ipynb
+│   └── installation/
+│       ├── thingsboard/
+│       │   └── ThingsBoard-Installation.md
+│       └── trendz/
+│           └── Trendz-Installations.md
+├── models/                 # Forecasting models and their evaluations
+│   ├── arima.ipynb
+│   ├── fourier.ipynb
+│   ├── prophet.ipynb
+│   └── sarimax.ipynb
+└── trendz/                 # Trendz analytics related content
+    ├── custom analytics/
+    │   ├── Trendz_Custom Model_ARIMA.md
+    │   ├── Trendz_Custom Model_Prophet.md
+    │   └── Trendz_Custom Model_SARIMAX.md
+    └── default analytics/
+        ├── Trendz_Default Model_ARIMA.md
+        ├── Trendz_Default Model_Fourier.md
+        ├── Trendz_Default Model_Linear Regression.md
+        └── Trendz_Default Model_Prophet.md
 ```
 
 ## Installation
+
 Detailed installation instructions for each component are provided in the `docs` directory. This includes setup for Trendz on Windows using Docker and ThingsBoard installation on Ubuntu using Java.
 
-- [Trendz Analytics Setup on Windows](/docs/installation/trendz/Trendz-Installations.md)
-- [ThingsBoard Installation on Ubuntu](/docs/installation/thingsboard/ThingsBoard-Installation.md)
+- [Trendz Analytics Setup on Windows](docs/installation/trendz/Trendz-Installations.md)
+- [ThingsBoard Installation on Ubuntu](docs/installation/thingsboard/ThingsBoard-Installation.md)
 
 ## Forecasting Models
+
 We employ various forecasting models such as Fourier Transformations, ARIMA, SARIMAX, and Prophet. Each model is located in its respective sub-directory within `models/`.
-- [Fourier](/models/fourier.ipynb)
-- [Prophet](/models/prophet.ipynb)
-- [SARIMAX](/models/sarimax.ipynb)
-- [ARIMA](/models/arima.ipynb)
+
+- [Fourier](models/fourier.ipynb)
+- [Prophet](models/prophet.ipynb)
+- [SARIMAX](models/sarimax.ipynb)
+- [ARIMA](models/arima.ipynb)
 
 ## Analytics with Trendz
+
 Trendz Analytics provides state-of-the-art tools for our time-series prediction tasks. Check out the `trendz/` directory for both custom and default analytics configurations and visualizations.
 
 ## Getting Started
+
 To get started with the project:
+
 1. Install Docker and Docker Compose.
 2. Follow the setup instructions in the `docs/installation/` directory.
 3. Explore the forecasting models in the `models/` directory.
 4. Analyze model predictions and visualizations in the `trendz/` directory.
 
 ## Acknowledgements
-We acknowledge the hard work and contributions from all team members and support from the community that made this project possible.
+
+We acknowledge the hard work and contributions from all AI and IoT team members and support from Bintang Toedjoe that made this project possible.
